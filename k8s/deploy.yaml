@@ -4,6 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: ty-deploy
+    ty: van-bui
   name: ty-deploy
 spec:
   replicas: 3
