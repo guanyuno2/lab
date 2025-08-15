@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: ty-deploy
+  name: ty-deploy
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: ty-deploy
+  template:
+    metadata:
+      labels:
+        app: ty-deploy
+    spec:
+      containers:
+      - image: http
+        name: http
