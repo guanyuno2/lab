@@ -20,4 +20,4 @@ deployment by default have rollingUpdate
 
 deployment is apps/v1 controller to manage res 
 
-Deployement manage Res. Res Manage Pod
+Deployement manage ReplicaSet. ReplicaSet Manage Pod
