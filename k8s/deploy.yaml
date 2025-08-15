@@ -6,15 +6,16 @@ metadata:
     app: ty-deploy
   name: ty-deploy
 spec:
-  replicas: 10
+  replicas: 3
   selector:
     matchLabels:
       app: ty-deploy
   template:
     metadata:
+      creationTimestamp: null
       labels:
         app: ty-deploy
     spec:
       containers:
-      - image: http
-        name: http
+      - image: nginx
+        name: nginx
